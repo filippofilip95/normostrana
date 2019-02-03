@@ -3,19 +3,19 @@
   "description": "Výpočet rozsahu u práce v znakoch alebo normostranách.",
   "keywords": "rozsah práce, záverečná práca, normostrana, diplomová práca, bakalárska praáca, dizertačná práca",
   "short_name": "Normostrana",
-  "start_url": "/",
+  "start_url": "/normostrana/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
   "theme_color": "#7d53de",
   "icons": [
     {
-      "src": "/assets/icons/android-chrome-192x192.png",
+      "src": "assets/icons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/icons/android-chrome-512x512.png",
+      "src": "assets/icons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

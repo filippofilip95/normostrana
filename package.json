@@ -3,6 +3,7 @@
   "name": "normostrana",
   "version": "0.0.0",
   "license": "MIT",
+  "homepage": "https://filippofilip95.github.io/normostrana/",
   "scripts": {
     "start": "per-env",
     "start:production": "npm run -s serve",
@@ -11,7 +12,9 @@
     "serve": "preact build --template src/index.html && preact serve",
     "dev": "preact watch --template src/index.html",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -23,15 +26,15 @@
     "eslint": "^4.9.0",
     "eslint-config-synacor": "^2.0.2",
     "identity-obj-proxy": "^3.0.0",
-    "per-env": "^1.0.2",
     "jest": "^21.2.1",
+    "per-env": "^1.0.2",
     "preact-cli": "^2.1.0",
     "preact-render-spy": "^1.2.1"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "preact": "^8.2.6",
-    "preact-compat": "^3.17.0",
-    "preact-router": "^2.5.7"
+    "preact-compat": "^3.17.0"
   },
   "jest": {
     "verbose": true,

@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 
 // components
-import BasicInfoCard from '../components/basicInfoCard';
+import BasicInfoCard from './basicInfoCard';
 
 class Home extends Component {
 	textareaRef;
