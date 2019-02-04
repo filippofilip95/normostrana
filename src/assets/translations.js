@@ -42,7 +42,7 @@ const translations = {
 		standardPageInfo1: 'Normostrana rozumí normovaná nebo standardizovaná strana s rozsahem',
 		standardPageInfo2: 'Znaků (včetně mezer) a používá se k měření rozsahu textu. Koeficient je definován v normě ',
 		standardPageShortName: 'NS',
-		standardPageUsage1: 'Normostrana se někdy označuje také jako',
+		standardPageUsage1: 'Normostrana se někdy označuje také jako ',
 		standardPageUsage2: 'A používá se v publicistice, překladatelství, a copywritingu. Také se s ní můžeme setkat při školních pracích, univezitných závarečných pracích a referátech',
 		infoRangeHeader: 'Doporučené rozsahy:',
 		btRange: 'Bakalářská práce - 30 - 40 NS (54 000 až 72 000 znaků včetně mezer)',

@@ -22,12 +22,21 @@ class translationsProvider extends Component {
 		}
 	}
 
+	updateMetaTags = () => {
+		const { translation } = this.state;
+		if (typeof window !== 'undefined'){
+			document.documentElement.lang = translation;
+		}
+	}
+
 	componentDidMount(){
 		this.setBrowserTranslation();
 	}
 
+	
 	render() {
 		const { translation } = this.state;
+		this.updateMetaTags();
 		return this.props.children[0]({
 			translations: translations[translation],
 			setTranslation: this.setTranslation

@@ -1,6 +1,6 @@
 {
-  "name": "Výpočet rozsahu, normostran",
-  "description": "Výpočet rozsahu u práce v znakoch alebo normostranách.",
+  "name": "Výpočet rozsahu, normostrán",
+  "description": "Výpočet rozsahu práce v znakoch alebo normostranách.",
   "keywords": "rozsah práce, záverečná práca, normostrana, diplomová práca, bakalárska praáca, dizertačná práca",
   "short_name": "Normostrana",
   "start_url": "/normostrana/",
