@@ -1,9 +1,6 @@
 import { h, Component } from 'preact';
 
-// components
-import BasicInfoCard from './basicInfoCard';
-
-class Home extends Component {
+class Calculator extends Component {
 	textareaRef;
 
 	state = {
@@ -25,20 +22,21 @@ class Home extends Component {
 		 });
 	};
 
-	render(){
+	render(props, state){
 
-		const { standartPages, charCount, charCountNoWhitespaces } = this.state;
+		const { standartPages, charCount, charCountNoWhitespaces } = state;
+		const { translations } = props;
+		
 		return (
 			<div>
 				<section class="card">
-					<h1>Výpočet Rozsahu textu</h1>
+					<h1>{translations.mainHeader}</h1>
 					<label for="thesis-text">
-						<h4>Vlož text a klikni na Vypočítaj. Počet normostrán a znakov sa zobrazí nižšie.</h4>
+						<h4>{translations.secondaryHeader}</h4>
 					</label>
 					<div class="textarea-wrapper">
 						<textarea
 							id="thesis-text"
-							label="Text práce"
 							class="textarea-input"
 							ref={ref => {
 								this.textareaRef = ref;
@@ -49,25 +47,24 @@ class Home extends Component {
 						class="button"
 						onClick={this.onHandleClick}
 					>
-						Vypočítaj
+						{translations.calculateButton}
 					</div>
 				</section>
 				{ standartPages &&
 					<section class="card">
 						<h3>
-							Výsledok výpočtu
+							{translations.resultHeader}
 						</h3>
 						<p class="results">
-							<strong>{standartPages.toLocaleString('sk-SK')}</strong> normostrán<br />
-							<strong>{charCount.toLocaleString('sk-SK')}</strong> znakov vrátane medzier<br />
-							<strong>{charCountNoWhitespaces.toLocaleString('sk-SK')}</strong> znakov okrem medzier
+							<strong>{standartPages.toLocaleString('sk-SK')}</strong> {translations.standardPages}<br />
+							<strong>{charCount.toLocaleString('sk-SK')}</strong> {translations.charsWithSpaces}<br />
+							<strong>{charCountNoWhitespaces.toLocaleString('sk-SK')}</strong> {translations.charsWithoutSpaces}
 						</p>
 					</section>
 				}
-				<BasicInfoCard />
 			</div>
 		);
 	}
 }
 
-export default Home;
+export default Calculator;

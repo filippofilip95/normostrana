@@ -32,13 +32,13 @@
     file.match(/\.(js|css)$/)) { %>
     <link
       rel="preload"
-      href="normostrana/<%=htmlWebpackPlugin.files.publicPath + file %>"
+      href="<%=htmlWebpackPlugin.files.publicPath + file %>"
       as="<%= file.match(/\.css$/)?'style':'script' %>"
     />
     <% } else if (file.match(/manifest\.json$/)) { %>
     <link
       rel="manifest"
-      href="normostrana/<%= htmlWebpackPlugin.files.publicPath + file %>"
+      href="<%= htmlWebpackPlugin.files.publicPath + file %>"
     />
     <% } %> <% } %> <% } %>
   </head>

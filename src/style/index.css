@@ -16,6 +16,11 @@ body {
   box-sizing: border-box;
 }
 
+.footer-select {
+  display: flex;
+  justify-content: center;
+}
+
 #app {
   height: 100%;
 }

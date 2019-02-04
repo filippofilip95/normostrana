@@ -1,4 +1,4 @@
-export default (config, env) => {
-	config.output.publicPath = env === 'DEV' ? '/' : '/normostrana/';
+export default (config, options) => {
+	config.output.publicPath = options.production ? '/normostrana/' : '/';
 };
   

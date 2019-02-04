@@ -1,10 +1,25 @@
 import { h } from 'preact';
 
-const Footer = () => (
+import translationsString, { getLangs } from '../assets/translations';
+
+const Footer = ({ setTranslation, translations }) => (
 	<footer>
 		<p class="footer-text">
-			Projekt je pod volnou licenciou MIT.
+			{translations.license}
 		</p>
+		<div class="footer-select">
+			<select
+				onChange={setTranslation}
+				value={translations.lang}
+			>
+				{getLangs().map(lang =>	(
+					<option
+						label={translationsString[lang].localLangName}
+					>{lang}
+					</option>
+				))}
+			</select>
+		</div>
 	</footer>
 );
 

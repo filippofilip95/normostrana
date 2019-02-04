@@ -1,8 +1,8 @@
 import { h } from 'preact';
 
-const Header = () => (
+const Header = ({ translations }) => (
 	<header class="header">
-		<h1>Normostrana</h1>
+		<h1>{translations.headerTitle}</h1>
 	</header>
 );
 
