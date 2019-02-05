@@ -23,7 +23,8 @@ const translations = {
 		dtRange: 'Diplomová práca -  50 - 70 NS (90 000 až 126 000 znakov)',
 		ditRange: 'Dizertačná práca - 80 - 120 strán (144 000 až 216 000 znakov)',
 		thesisRangeCaption: 'Uvedené rozsahy sú podľa smernice Univerzity UKF v Nitre. Na iných univerzitách sa môžu líšiť',
-		license: 'Projekt je pod volnou licenciou MIT.'
+		license: 'Projekt je pod volnou licenciou MIT.',
+		language: 'Jazyk:'
 	},
 	cs: {
 		lang: 'cs',
@@ -49,7 +50,8 @@ const translations = {
 		dtRange: 'Diplomová práce - 50 - 70 NS (90 000 až 126 000 znaků)',
 		ditRange: 'Disertační práce - 80 - 120 stran (144 000 až 216 000 znaků)',
 		thesisRangeCaption: 'Uvedené rozsahy jsou podle směrnice Univerzity UKF v Nitře. Na jiných univerzitách se mohou lišit',
-		license: 'Projekt je pod volnou licencí MIT.'
+		license: 'Projekt je pod volnou licencí MIT.',
+		language: 'Jazyk:'
 	}
 };
 

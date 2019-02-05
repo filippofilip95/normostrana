@@ -8,7 +8,11 @@ const Footer = ({ setTranslation, translations }) => (
 			{translations.license}
 		</p>
 		<div class="footer-select">
+			<label for="lang-select">
+				{translations.language}
+			</label>
 			<select
+				id="lang-select"
 				onChange={setTranslation}
 				value={translations.lang}
 			>
