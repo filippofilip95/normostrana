@@ -30,7 +30,7 @@ class Calculator extends Component {
 		return (
 			<div>
 				<section class="card">
-					<h1>{translations.mainHeader}</h1>
+					<h2>{translations.mainHeader}</h2>
 					<label for="thesis-text">
 						<h4>{translations.secondaryHeader}</h4>
 					</label>
