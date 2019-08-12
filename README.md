@@ -38,5 +38,5 @@ npm run test
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Screenshot
-![pwa-screenshot]([https://raw.githubusercontent.com/filippofilip95/normostrana/master/standardpages-screenshot.png](https://raw.githubusercontent.com/filippofilip95/normostrana/master/standardpages-screenshot.png)
+![pwa-screenshot]([https://raw.githubusercontent.com/filippofilip95/normostrana/master/standardpages-screenshot.png](https://raw.githubusercontent.com/filippofilip95/normostrana/master/standardpages-screenshot.png))
 
