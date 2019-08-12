@@ -4,7 +4,7 @@
 Web app for counting standard pages.
 Standard pages are usually used to count the size of academic theses in Slovakia and the Czech Republic.
 
-### Standard Page Definition
+## Standard Page Definition
 Or, NS. It is a standardized side of the text, which is recognized as an international unit of length texts. Its length is 1800 characters including spaces. This range corresponds to 30 lines by 60 characters [(Source)](http://www.czech-universities.com/akademicky-slovnik/heslo/monormostrana).
 
 ## Why
