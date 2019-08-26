@@ -14,7 +14,8 @@
     "lint": "eslint src",
     "test": "jest",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prettify:all": "prettier --print-width 80 --no-semi --single-quote --tab-width 4 --trailing-comma es5 --write src/**/*.js"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -30,7 +31,8 @@
     "jest": "^21.2.1",
     "per-env": "^1.0.2",
     "preact-cli": "^2.1.0",
-    "preact-render-spy": "^1.2.1"
+    "preact-render-spy": "^1.2.1",
+    "prettier": "1.18.2"
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
