@@ -1,15 +1,15 @@
-import {useState} from "preact/hooks";
+import { useState } from 'preact/hooks';
 
 export const useSetState = (initialState) => {
-    const [state, setRawState] = useState(initialState);
+	const [state, setRawState] = useState(initialState);
 
-    const setState = (newState) => {
+	const setState = (newState) => {
 
-        setRawState({
-            ...state,
-            ...newState
-        })
-    }
+		setRawState({
+			...state,
+			...newState
+		});
+	};
 
-    return [state, setState]
-}
+	return [state, setState];
+};

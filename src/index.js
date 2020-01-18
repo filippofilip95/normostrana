@@ -1,7 +1,7 @@
 import './style';
 import './style/normalize';
-import App from './components/app';
+import Main from './components/Main';
 
-export default App;
+export default Main;
 
 
