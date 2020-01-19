@@ -2,7 +2,7 @@ import { useTranslations } from './TranslationsProvider';
 
 const CalculatorResults = ({ standardPagesCount, charCount, charCountWithoutSpace }) => {
 	const { translations } = useTranslations();
-	
+
 	if (!standardPagesCount) {
 		return null;
 	}
@@ -10,22 +10,26 @@ const CalculatorResults = ({ standardPagesCount, charCount, charCountWithoutSpac
 	return (
 		<section class="card">
 			<h3>{translations.resultHeader}</h3>
-			<p class="results">
-				<strong>
-					{standardPagesCount.toLocaleString()}
-				</strong>{' '}
-				{translations.standardPages}
-				<br />
-				<strong>
-					{charCount.toLocaleString()}
-				</strong>{' '}
-				{translations.charsWithSpaces}
-				<br />
-				<strong>
-					{charCountWithoutSpace.toLocaleString()}
-				</strong>{' '}
-				{translations.charsWithoutSpaces}
-			</p>
+			<ul class="results">
+				<li>
+					<strong>
+						{standardPagesCount.toLocaleString()}
+					</strong>{' '}
+					{translations.standardPages}
+				</li>
+				<li>
+					<strong>
+						{charCount.toLocaleString()}
+					</strong>{' '}
+					{translations.charsWithSpaces}
+				</li>
+				<li>
+					<strong>
+						{charCountWithoutSpace.toLocaleString()}
+					</strong>{' '}
+					{translations.charsWithoutSpaces}
+				</li>
+			</ul>
 		</section>
 	);
 };

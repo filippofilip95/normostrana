@@ -1,6 +1,7 @@
 :root {
     --white-color: white;
     --main-bg-color: #fafafa;
+    --dark-bg-color: #e1e1e1;
     --main-accent-color: #7d53de;
     --dark-accent-color: #734bcf;
     --main-font-color: #444;
@@ -69,9 +70,11 @@ button:hover {
     width: 100%;
     background: var(--main-accent-color);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    height: 56px;
 }
 
-.header h1 {
+.header title {
+    display: block;
     padding: 0 var(--unit-size-x8);
     font-size: 25px;
     font-weight: 400;
@@ -90,6 +93,14 @@ button:hover {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+.card h1 {
+    font-size: 1.8rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+}
+
 .card h1,
 h2,
 h3,
@@ -100,22 +111,30 @@ p {
     margin-top: 0;
 }
 
+ul {
+    margin-left: 0;
+    padding-left: var(--unit-size-x6);
+}
+
 .card p:last-child {
     margin-bottom: 0;
 }
 
-.faq ul {
-    margin-top: 0;
-    padding-left: var(--unit-size-x4);
-}
 
 .faq details summary {
     cursor: pointer;
     outline: none;
+    padding: var(--unit-size-x2) 0;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: var(--unit-size-x2);
+}
+
+.faq details summary:hover {
+    background-color: #e1e1e1;
 }
 
 .faq details + details {
-    margin-top: var(--unit-size-x8);
+    margin-top: var(--unit-size-x2);
 }
 
 .faq details p {
@@ -147,7 +166,11 @@ footer label {
 
 /* media queries */
 @media only screen and (max-width: 600px) {
-    .header h1 {
+    .header {
+        height: 46px;
+    }
+
+    .header title {
         font-size: 22px;
     }
 

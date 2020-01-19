@@ -30,9 +30,9 @@ const Calculator = () => {
 	return (
 		<div>
 			<section class="card">
-				<h2>{translations.mainHeader}</h2>
+				<h1>{translations.mainHeader}</h1>
 				<label for="textarea-input">
-					<h4 class="how-to-title">{translations.secondaryHeader}</h4>
+					<h2 class="how-to-title">{translations.secondaryHeader}</h2>
 				</label>
 				<textarea
 					id="textarea-input"

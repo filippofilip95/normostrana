@@ -5,7 +5,9 @@ const Header = () => {
 
 	return (
 		<header class="header">
-			<h1>{translations.headerTitle}</h1>
+			<title>
+				{translations.headerTitle}
+			</title>
 		</header>
 	);
 };

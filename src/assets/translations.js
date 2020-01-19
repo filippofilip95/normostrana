@@ -2,10 +2,10 @@ const translations = {
 	sk: {
 		lang: 'sk',
 		localLangName: 'SK',
-		headerTitle: 'Normostrana',
-		mainHeader: 'Výpočet Rozsahu textu a normostrán',
+		headerTitle: 'PocetZnakov.sk',
+		mainHeader: 'Výpočet Normostrán a Počet Znakov.',
 		secondaryHeader:
-			'Vlož text a klikni na Vypočítaj. Počet normostrán a znakov sa zobrazí nižšie.',
+			'Vlož text a klikni na Vypočítaj. Počet normostrán a počet znakov sa zobrazí nižšie.',
 		calculateButton: 'Vypočítaj',
 		resultHeader: 'Výsledok výpočtu',
 		standardPages: 'normostrán',
@@ -20,7 +20,7 @@ const translations = {
 		faqQuestion2: 'Načo sa Normostrana používá?',
 		faqAnswer2: 'Používa sa na meranie rozsahu textu podlľa počtu znakov.',
 		faqQuestion3: 'Kto určil počet znakov Normostrany?',
-		faqAnswer3: 'Koeficient je 1800 je definovaný v norme STN EN ISO 690.',
+		faqAnswer3: 'Koeficient 1800 znakov pre jednu Normostranu je definovaný v norme STN EN ISO 690',
 		faqQuestion4: 'Kde sa Normostrana používá?',
 		faqAnswer4: 'Používa sa v publicistike, prekladatelstve, a copywritingu. Taktiež sa s nou môžeme stretnúť pri školských prácach, univezitných závarečných prácach a referátoch',
 		faqQuestion5: 'Koľko Normostrán / počet znakov potrebujem k Zaverečnej práci?',
@@ -30,17 +30,17 @@ const translations = {
 		ditRange:
 			'Dizertačná práca - 80 - 120 strán (144 000 až 216 000 znakov)',
 		thesisRangeCaption:
-			'Uvedené rozsahy sú podľa smernice Univerzity UKF v Nitre. Na iných univerzitách sa môžu líšiť',
+			'Uvedené rozsahy sú podľa smernice Univerzity UKF v Nitre. Na iných univerzitách sa môžu líšiť.  Vačšinov sú však veľmi podobné alebo identické.',
 		license: '',
 		language: 'Jazyk:'
 	},
 	cs: {
 		lang: 'cs',
 		localLangName: 'CZ',
-		headerTitle: 'Normostrana',
-		mainHeader: 'Výpočet Rozsahu textu a normostrán',
+		headerTitle: 'PocetZnakov.sk',
+		mainHeader: 'Výpočet normostran a Počet Znaků.',
 		secondaryHeader:
-			'Vlož text a klikni na Vypočítej. Počet normostran a znaků se zobrazí níže. ',
+			'Vlož text a klikni na Vypočítej. Počet normostran a počet znaků se zobrazí níže.',
 		calculateButton: 'Vypočítej',
 		resultHeader: 'Výsledek výpočtu',
 		standardPages: 'normostran',
@@ -49,14 +49,16 @@ const translations = {
 		faqTitle: 'Časté otázky a odpovědi',
 		standardPageCount: '1800',
 		stnNorm: 'ČSN EN ISO 690',
+		faqQuestion1: 'Co je to Normostrana?',
 		faqAnswer1:
-			'Normostrana rozumí normovaná nebo standardizovaná strana s rozsahem',
-		standardPageInfo2:
-			'Znaků (včetně mezer) a používá se k měření rozsahu textu. Koeficient je definován v normě ',
-		standardPageShortName: 'NS',
-		standardPageUsage1: 'Normostrana se někdy označuje také jako ',
-		standardPageUsage2:
-			'A používá se v publicistice, překladatelství, a copywritingu. Také se s ní můžeme setkat při školních pracích, univezitných závarečných pracích a referátech',
+			'Normostrana rozumí normovaná nebo standardizovaná strana s počtem 1800 znaků (včetně mezer, tedy i s mezerami).',
+		faqQuestion2: 'K čemu se Normostrana používá?',
+		faqAnswer2: 'Používá se k měření rozsahu textu podle počtu znaků',
+		faqQuestion3: 'Kdo určil počet znaků Normostrany?',
+		faqAnswer3: 'Koeficient 1800 znaků pro jednu normostranu je definován v normě ČSN EN ISO 690.',
+		faqQuestion4: 'Kde se Normostrana používá?',
+		faqAnswer4: 'Používá se v publicistice, překladatelství, a copywritingu. Také se s ní můžeme setkat při školních pracích, univezitných závarečných pracích a referátech.',
+		faqQuestion5: 'Kolik normostran / počet znaků potřebuji k závěrečné práci?',
 		infoRangeHeader: 'Doporučené rozsahy:',
 		btRange:
 			'Bakalářská práce - 30 - 40 NS (54 000 až 72 000 znaků včetně mezer)',
@@ -64,7 +66,7 @@ const translations = {
 		ditRange:
 			'Disertační práce - 80 - 120 stran (144 000 až 216 000 znaků)',
 		thesisRangeCaption:
-			'Uvedené rozsahy jsou podle směrnice Univerzity UKF v Nitře. Na jiných univerzitách se mohou lišit. Vačšinov sú však veľmi podobné alebo identické v rámci ostatných univerzít.',
+			'Uvedené rozsahy jsou podle směrnice Univerzity UKF v Nitře. Na jiných univerzitách se mohou lišit. Většinou jsou však velmi podobné nebo identické',
 		license: 'bla bla',
 		language: 'Jazyk:'
 	}
