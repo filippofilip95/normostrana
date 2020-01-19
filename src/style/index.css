@@ -143,6 +143,10 @@ p {
     margin: var(--unit-size-x2) 0 0 var(--unit-size-x8);
 }
 
+.faq ul {
+    margin-bottom: var(--unit-size-x2);
+}
+
 .footer-select {
     display: flex;
     justify-content: center;
