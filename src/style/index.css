@@ -176,6 +176,10 @@ footer label {
         height: 46px;
     }
 
+    ul {
+        padding-left: var(--unit-size-x2);
+    }
+
     .header title {
         font-size: 22px;
     }
