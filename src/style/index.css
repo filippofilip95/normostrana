@@ -48,10 +48,16 @@ button {
     font-size: 18px;
     outline: none;
     transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 button:hover {
     background: var(--dark-accent-color);
+}
+
+ul {
+    padding-left: var(--unit-size-x6);
+    margin: 0;
 }
 
 #app {
@@ -111,10 +117,6 @@ p {
     margin-top: 0;
 }
 
-ul {
-    margin-left: 0;
-    padding-left: var(--unit-size-x6);
-}
 
 .card p:last-child {
     margin-bottom: 0;

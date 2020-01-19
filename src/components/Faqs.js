@@ -11,16 +11,6 @@ const Faqs = () => {
 			<details open>
 				<summary>
 					<strong>
-						{translations.faqQuestion1}
-					</strong>
-				</summary>
-				<p>
-					{translations.faqAnswer1}
-				</p>
-			</details>
-			<details open>
-				<summary>
-					<strong>
 						{translations.faqQuestion5}
 					</strong>
 				</summary>
@@ -31,6 +21,16 @@ const Faqs = () => {
 						<li>{translations.ditRange}</li>
 					</ul>
 					<i>{translations.thesisRangeCaption}.</i>
+				</p>
+			</details>
+			<details open>
+				<summary>
+					<strong>
+						{translations.faqQuestion1}
+					</strong>
+				</summary>
+				<p>
+					{translations.faqAnswer1}
 				</p>
 			</details>
 			<details open>
