@@ -14,8 +14,8 @@ export const useSetState = (initialState) => {
     return [state, setState];
 };
 
-export const trackEvent = (event) => {
+export const trackEvent = (eventAction) => {
     if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-        window.gtag(event)
+        window.gtag('event', eventAction);
     }
 };
