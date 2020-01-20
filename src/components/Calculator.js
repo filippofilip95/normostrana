@@ -31,13 +31,14 @@ const Calculator = () => {
 	return (
 		<div>
 			<section class="card">
-				<h1>{translations.mainHeader}</h1>
+				<h1 class='main-head'>{translations.mainHeader}</h1>
 				<label for="textarea-input">
 					<h2 class="how-to-title">{translations.secondaryHeader}</h2>
 				</label>
 				<textarea
 					id="textarea-input"
 					ref={textareaRef}
+					placeholder={translations.inputPlaceholder}
 					onPaste={() => trackEvent('paste_into_textarea')}
 				/>
 				<button onClick={onHandleClick}>

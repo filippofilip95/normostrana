@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <header class="header">
-            <img alt='logo' className='logo' src={IMG_LOGO}/>
+            <img alt='logo' class='logo' src={IMG_LOGO}/>
             <title>
                 <a href='https://pocetznakov.sk/'>
                     {translations.headerTitle}

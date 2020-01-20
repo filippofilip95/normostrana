@@ -17,10 +17,6 @@
     --unit-size-x20: calc(var(--unit-size) * 20);
 }
 
-* {
-    box-sizing: border-box;
-}
-
 html,
 body {
     height: 100%;
@@ -28,7 +24,8 @@ body {
     padding: 0;
     margin: 0;
     background: var(--main-bg-color);
-    font-family: "Helvetica Neue", arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
     font-weight: 400;
     color: var(--main-font-color);
     -webkit-font-smoothing: antialiased;
@@ -45,7 +42,6 @@ button {
     border-radius: var(--unit-size);
     color: var(--light-font-color);
     font-weight: 500;
-    font-size: 18px;
     outline: none;
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
@@ -58,6 +54,19 @@ button:hover {
 ul {
     padding-left: var(--unit-size-x6);
     margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h3,
+h5,
+h6 {
+    font-weight: 700;
 }
 
 #app {
@@ -87,7 +96,7 @@ ul {
 
 .header .logo {
     width: auto;
-    height: 95%;
+    height: 85%;
 }
 
 .header title {
@@ -98,8 +107,13 @@ ul {
     color: var(--light-font-color);
 }
 
+.main-head {
+    margin-top: 0;
+}
+
 .how-to-title {
     margin-bottom: 0;
+    font-weight: 600;
 }
 
 .card {
@@ -118,21 +132,19 @@ ul {
     font-size: 1.2rem;
 }
 
-.card h1,
-h2,
-h3,
-h3,
-h5,
-h6,
-p {
-    margin-top: 0;
-}
-
-
 .card p:last-child {
     margin-bottom: 0;
 }
 
+.card .results {
+    font-size: 18px;
+}
+
+
+.faq h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
 
 .faq details summary {
     cursor: pointer;
@@ -140,6 +152,7 @@ p {
     padding: var(--unit-size-x2) 0;
     transition: background-color 0.2s ease-in-out;
     border-radius: var(--unit-size-x2);
+    font-weight: 600;
 }
 
 .faq details summary:hover {
@@ -169,7 +182,9 @@ p {
     min-width: 100%;
     min-height: 15rem;
     max-height: 70vh;
+    padding: var(--unit-size-x2);
     margin: var(--unit-size-x4) 0;
+    border: 1px var(--main-accent-color) solid;
 }
 
 .footer-text {
