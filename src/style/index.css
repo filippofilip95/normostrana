@@ -216,6 +216,6 @@ footer label {
     }
 
     #app {
-        padding: var(--unit-size-x12) var(--unit-size-x4);
+        padding: var(--unit-size-x12) var(--unit-size-x2);
     }
 }
