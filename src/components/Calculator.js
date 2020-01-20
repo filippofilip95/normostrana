@@ -1,5 +1,5 @@
 import { useRef } from 'preact/hooks';
-import { useSetState } from './libs';
+import {trackEvent, useSetState} from './libs';
 import { useTranslations } from './TranslationsProvider';
 import CalculatorResults from './CalculatorResults';
 
@@ -15,10 +15,11 @@ const Calculator = () => {
 	const { standardPagesCount, charCount, charCountWithoutSpaces } = state;
 
 	const onHandleClick = () => {
+		trackEvent('click_on_calculate');
 		const value = textareaRef.current.value;
 		const charCount = value.length;
 		const charCountWithoutSpaces = value.replace(/\s/g, '').length;
-		const standardPagesCount = parseFloat(charCount / 1800).toFixed(2);
+		const standardPagesCount = ((charCount) / 1800).toFixed(2);
 
 		setState({
 			standardPagesCount,
@@ -37,6 +38,7 @@ const Calculator = () => {
 				<textarea
 					id="textarea-input"
 					ref={textareaRef}
+					onPaste={() => trackEvent('paste_into_textarea')}
 				/>
 				<button onClick={onHandleClick}>
 					{translations.calculateButton}
