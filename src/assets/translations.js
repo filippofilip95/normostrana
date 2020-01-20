@@ -25,10 +25,10 @@ const translations = {
 		faqAnswer4: 'Používa sa v publicistike, prekladatelstve, a copywritingu. Taktiež sa s nou môžeme stretnúť pri školských prácach, univezitných závarečných prácach a referátoch',
 		faqQuestion5: 'Koľko Normostrán / Počet Znakov potrebujem k Zaverečnej práci?',
 		btRange:
-			'Bakalárska práca - 30 - 40 NS (54 000 až 72 000 znakov vrátane medzier)',
-		dtRange: 'Diplomová práca -  50 - 70 NS (90 000 až 126 000 znakov vrátane medzier)',
+			'Bakalárska práca: 30 - 40 NS (54 000 až 72 000 znakov vrátane medzier)',
+		dtRange: 'Diplomová práca:  50 - 70 NS (90 000 až 126 000 znakov vrátane medzier)',
 		ditRange:
-			'Dizertačná práca - 80 - 120 strán (144 000 až 216 000 znakov vrátane medzier)',
+			'Dizertačná práca: 80 - 120 strán (144 000 až 216 000 znakov vrátane medzier)',
 		thesisRangeCaption:
 			'Uvedené rozsahy sú podľa smernice Univerzity UKF v Nitre. Na iných univerzitách sa môžu líšiť.  Vačšinov sú však veľmi podobné alebo identické.',
 		license: '',
@@ -61,10 +61,10 @@ const translations = {
 		faqQuestion5: 'Kolik Normostran / Počet Znaků potřebuji k závěrečné práci?',
 		infoRangeHeader: 'Doporučené rozsahy:',
 		btRange:
-			'Bakalářská práce - 30 - 40 NS (54 000 až 72 000 znaků včetně mezer)',
-		dtRange: 'Diplomová práce - 50 - 70 NS (90 000 až 126 000 znaků včetně mezer)',
+			'Bakalářská práce: 30 - 40 NS (54 000 až 72 000 znaků včetně mezer)',
+		dtRange: 'Diplomová práce: 50 - 70 NS (90 000 až 126 000 znaků včetně mezer)',
 		ditRange:
-			'Disertační práce - 80 - 120 stran (144 000 až 216 000 znaků včetně mezer)',
+			'Disertační práce: 80 - 120 stran (144 000 až 216 000 znaků včetně mezer)',
 		thesisRangeCaption:
 			'Uvedené rozsahy jsou podle směrnice Univerzity UKF v Nitře. Na jiných univerzitách se mohou lišit. Většinou jsou však velmi podobné nebo identické',
 		license: 'bla bla',
