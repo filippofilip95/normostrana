@@ -10,6 +10,8 @@
     "start:development": "npm run -s dev",
     "build": "preact build --template src/index.html",
     "serve": "preact build --template src/index.html && preact serve",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build src/lambda",
     "dev": "preact watch --template src/index.html",
     "lint": "eslint src",
     "test": "jest",
@@ -34,6 +36,7 @@
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "netlify-lambda": "^1.6.3",
     "preact": "^10.2.1"
   },
   "jest": {
