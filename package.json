@@ -8,13 +8,12 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build": "preact build --template src/index.html",
+    "build": "preact build --template src/index.html && npm run prepare-netlify-functions",
+    "prepare-netlify-functions": "cp -r ./src/.netlify ./build/",
     "serve": "preact build --template src/index.html && preact serve",
     "dev": "preact watch --template src/index.html",
     "lint": "eslint src",
     "test": "jest",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "prettify:all": "prettier --print-width 80 --no-semi --single-quote --tab-width 4 --trailing-comma es5 --write src/**/*.js"
   },
   "eslintConfig": {
