@@ -8,13 +8,14 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build": "preact build --template src/index.html",
     "serve": "preact build --template src/index.html && preact serve",
+    "build": "npm run build:client && npm run build:lambda",
+    "build:client": "preact build --template src/index.html",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build src/lambda",
     "dev": "preact watch --template src/index.html",
     "lint": "eslint src",
     "test": "jest",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "prettify:all": "prettier --print-width 80 --no-semi --single-quote --tab-width 4 --trailing-comma es5 --write src/**/*.js"
   },
   "eslintConfig": {
@@ -36,8 +37,8 @@
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "preact": "^8.2.6",
-    "preact-compat": "^3.17.0"
+    "netlify-lambda": "^1.6.3",
+    "preact": "^10.2.1"
   },
   "jest": {
     "verbose": true,

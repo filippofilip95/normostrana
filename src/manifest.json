@@ -1,7 +1,7 @@
 {
-  "name": "Normostrana, Výpočet normostrán, Odporúčaný rozsah",
-  "description": "Výpočet normostrán. Normostrana a rozsah záverečnej práce. Odporúčané rozsahy normostran záverečných prác. Výpočet rozsahu normostran.",
-  "keywords": "záverečná práca, normostrana, diplomová práca, bakalárska práca, dizertačná práca, rozsah práce, odporúčaný rozsah, počet normostrán, normostrany",
+  "name": "Normostrana, Výpočet Normostrán, Počet Znakov, Rozsah práce",
+  "description": "Výpočet normostrán a počtu znakov zo zadaného textu. Prehľad odporučaných rozsahov záverečných prác a základné informácie o normostrane.",
+  "keywords": "normostrana, výpočet normostrán, počet znakov, počet slov, 1 normostrana, počítadlo znakov, rozsah záverečnej práce, diplomová práca, bakalárska práca, dizertačná práca, rozsah práce, odporúčaný rozsah, počet normostrán, normostrany",
   "short_name": "Normostrana",
   "start_url": "/",
   "display": "standalone",
@@ -11,13 +11,13 @@
   "icons": [
     {
       "src": "assets/icons/android-chrome-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
       "src": "assets/icons/android-chrome-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }

@@ -8,7 +8,7 @@ Standard pages are usually used to count the size of academic theses in Slovakia
 Or, NS. It is a standardized side of the text, which is recognized as an international unit of length texts. Its length is 1800 characters including spaces. This range corresponds to 30 lines by 60 characters [(Source)](http://www.czech-universities.com/akademicky-slovnik/heslo/monormostrana).
 
 ## Why
-This app was built just as a simple side project to demonstrate the Progresive Web App.
+This app was built just as a simple side project to demonstrate the Progresive Web Main.
 
 ## Accessible at
 [https://normostrana.net/](https://normostrana.net/)
