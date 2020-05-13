@@ -1,6 +1,6 @@
 
 
-# Standard Page / Normostrana
+# Standard Page / Normostrana, Character Counter / Pocet Znakov
 Web app for counting standard pages.
 Standard pages are usually used to count the size of academic theses in Slovakia and the Czech Republic.
 
