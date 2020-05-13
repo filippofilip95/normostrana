@@ -11,7 +11,7 @@ Or, NS. It is a standardized side of the text, which is recognized as an interna
 This app was built just as a simple side project to demonstrate the Progresive Web Main.
 
 ## Accessible at
-[https://normostrana.net/](https://normostrana.net/)
+[https://pocetznakov.sk/](https://pocetznakov.net/)
 
 ## Built with
  - [Preact](https://preactjs.com) (3KB Alterniative to [React](https://reactjs.org/))
