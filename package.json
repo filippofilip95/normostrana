@@ -38,7 +38,8 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "netlify-lambda": "^1.6.3",
-    "preact": "^10.2.1"
+    "preact": "^10.2.1",
+    "preact-router": "^3.2.1"
   },
   "jest": {
     "verbose": true,

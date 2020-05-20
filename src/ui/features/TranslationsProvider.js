@@ -1,8 +1,8 @@
 import { createContext } from 'preact';
 import { useContext, useEffect } from 'preact/hooks';
 
-import translations from '../assets/translations';
-import { useSetState } from './libs';
+import translations from '../../assets/translations';
+import { useSetState } from '../../utils/libs';
 
 export const Translations = createContext({});
 

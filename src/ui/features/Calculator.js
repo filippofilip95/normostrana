@@ -1,5 +1,5 @@
 import { useRef } from 'preact/hooks';
-import {trackEvent, useSetState} from './libs';
+import {trackEvent, useSetState} from '../../utils/libs';
 import { useTranslations } from './TranslationsProvider';
 import CalculatorResults from './CalculatorResults';
 

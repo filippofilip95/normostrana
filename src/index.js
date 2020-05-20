@@ -1,5 +1,5 @@
 import './style';
-import Main from './components/Main';
+import Main from './ui/features/Main';
 
 export default Main;
 

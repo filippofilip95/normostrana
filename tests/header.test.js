@@ -1,4 +1,4 @@
-import Header from '../src/components/Header';
+import Header from '../src/ui/features/Header';
 import { Link } from 'preact-router/match';
 // See: https://github.com/mzgoddard/preact-render-spy
 import { shallow } from 'preact-render-spy';
