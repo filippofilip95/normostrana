@@ -1,4 +1,4 @@
-import { useTranslations } from './TranslationsProvider';
+import { useTranslations } from '../TranslationsProvider';
 
 const Faqs = () => {
 	const { translations } = useTranslations();

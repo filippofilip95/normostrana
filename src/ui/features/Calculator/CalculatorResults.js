@@ -1,4 +1,4 @@
-import { useTranslations } from './TranslationsProvider';
+import { useTranslations } from '../TranslationsProvider';
 
 const CalculatorResults = ({ standardPagesCount, charCount, charCountWithoutSpace }) => {
 	const { translations } = useTranslations();

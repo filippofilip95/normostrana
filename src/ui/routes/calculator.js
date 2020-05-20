@@ -1,7 +1,7 @@
 import {Fragment} from 'preact';
+import MainCalculator from '../features/Calculator'
 import Faqs from "../features/Faqs";
 import Footer from "../features/Footer";
-import MainCalculator from "../features/Calculator";
 
 const Calculator = () => {
   return (

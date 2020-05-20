@@ -1,8 +1,9 @@
-import {useTranslations} from './TranslationsProvider';
-import Link from "../components/Link";
-import IMG_LOGO from '../../assets/icons/android-chrome-192x192.png';
+import {useTranslations} from '../TranslationsProvider';
+import Link from "../../components/Link";
+import IMG_LOGO from '../../../assets/icons/android-chrome-192x192.png';
+import './Navigation.css'
 
-const Header = () => {
+const Navigation = () => {
   const {translations} = useTranslations();
 
   return (
@@ -19,4 +20,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navigation;

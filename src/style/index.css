@@ -76,67 +76,6 @@ h6 {
     padding: var(--unit-size-x16) var(--unit-size-x8);
 }
 
-.header {
-    padding-left: var(--unit-size-x12);
-    display: flex;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background: var(--main-accent-color);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    height: 56px;
-}
-
-.header a, .header a:visited {
-    color: var(--light-font-color);
-    text-decoration: none;
-}
-
-.header a {
-    margin-left: var(--unit-size-x4);
-    padding: var(--unit-size-x2) var(--unit-size-x2);
-    opacity: 0.8;
-    transition: opacity .1s ease-in-out;
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-
-.header a:hover, .header .active {
-    opacity: 1;
-}
-
-
-.header .logo {
-    width: auto;
-    height: 85%;
-}
-
-.header title a {
-    font-size: 1.5rem;
-}
-
-.header title {
-    display: block;
-    padding: 0 var(--unit-size-x2);
-    font-weight: 400;
-    color: var(--light-font-color);
-    position: relative;
-}
-
-.header title:after {
-    display: block;
-    position: absolute;
-    content: '';
-    right: -2px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: var(--white-color);
-    opacity: 0.8;
-}
-
 .main-head {
     margin-top: 0;
 }

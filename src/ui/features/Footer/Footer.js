@@ -1,5 +1,5 @@
-import translationsString, {getLangs} from '../../assets/translations';
-import {useTranslations} from './TranslationsProvider';
+import translationsString, {getLangs} from '../../../assets/translations';
+import {useTranslations} from '../TranslationsProvider';
 
 const Footer = () => {
   const {setTranslation, translations} = useTranslations();

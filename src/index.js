@@ -1,6 +1,25 @@
+import Router from "preact-router";
+import TranslationsProvider from "./ui/features/TranslationsProvider";
+import Navigation from "./ui/features/Navigation";
+import Calculator from "./ui/routes/calculator";
+import Normostrana from "./ui/routes/normostrana";
 import './style';
-import Main from './ui/features/Main';
 
-export default Main;
+const App = () => (
+  <div id="app">
+    <TranslationsProvider>
+      <Navigation/>
+      <main class="content">
+        <Router>
+          <Calculator path='/'/>
+          <Normostrana path='/normostrana'/>
+        </Router>
+      </main>
+    </TranslationsProvider>
+  </div>
+);
+
+
+export default App;
 
 
