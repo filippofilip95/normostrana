@@ -1,9 +1,8 @@
 :root {
     --white-color: white;
-    --main-bg-color: #F0EBF6;
-    --dark-bg-color: #e1e1e1;
-    --main-accent-color: #8E39EF;
-    --dark-accent-color: #5E26A0;
+    --main-color: #2364AA;
+    --main-bg-color: #DBE4EE;
+    --main-light-color: #3DA5D9;
     --main-font-color: #444;
     --light-font-color: white;
 
@@ -38,7 +37,7 @@ li {
 
 button {
     padding: 0.5rem 1.5rem;
-    background: var(--main-accent-color);
+    background: var(--main-color);
     border-radius: var(--unit-size);
     color: var(--light-font-color);
     font-weight: 500;
@@ -48,7 +47,7 @@ button {
 }
 
 button:hover {
-    background: var(--dark-accent-color);
+    background: var(--main-light-color);
 }
 
 ul {
@@ -153,7 +152,7 @@ h6 {
     max-height: 70vh;
     padding: var(--unit-size-x2);
     margin: var(--unit-size-x4) 0;
-    border: 1px var(--main-accent-color) solid;
+    border: 1px var(--main-color) solid;
 }
 
 .footer-text {
