@@ -1,17 +1,16 @@
 import {useTranslations} from '../TranslationsProvider';
 import Link from "../../components/Link";
-import IMG_LOGO from '../../../assets/icons/android-chrome-192x192.png';
-import './Navigation.css'
+import IMG_LOGO from '../../../assets/pocetznakov-logo.svg';
+import './Navigation.scss'
 
 const Navigation = () => {
   const {translations} = useTranslations();
 
   return (
-    <nav class="header">
-      <img alt='logo' class='logo' src={IMG_LOGO}/>
+    <nav>
       <title>
-        <a href='https://pocetznakov.sk/'>
-          {translations.headerTitle}
+        <a class='logo' href='https://pocetznakov.sk/'>
+          <img alt='logo' src={IMG_LOGO}/>
         </a>
       </title>
       <Link href="/">Výpočet Normostrán</Link>
