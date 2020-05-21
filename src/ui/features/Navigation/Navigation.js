@@ -15,6 +15,7 @@ const Navigation = () => {
       </title>
       <Link href="/">Výpočet Normostrán</Link>
       <Link href="/normostrana">Viac o Normostrane</Link>
+      <Link href="/normostrana">O Projekte</Link>
     </nav>
   );
 };
