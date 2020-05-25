@@ -90,20 +90,24 @@ nav {
 @media only screen and (max-width: 780px) {
   nav .hamburger {
     display: block;
+    margin-left: auto;
   }
 
   .links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
     padding: var(--unit-size) 0;
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: top 0.2s ease-in-out, visibility 0.2s;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-    &:not(.isOpen) {
-      display: none;
+    &.isOpen {
+      top: 100%;
+      visibility: visible;
     }
   }
 }
