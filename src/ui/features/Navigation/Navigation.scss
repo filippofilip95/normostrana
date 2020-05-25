@@ -12,19 +12,24 @@ nav {
     display: flex;
     align-items: center;
 
-    .logo {
-      opacity: 1;
-      display: block;
-      padding: 0;
-      margin: 0;
+    title {
+      z-index: 3;
 
-      img {
-        width: auto;
-        height: 42px;
-        position: relative;
-        top: 2px;
+      .logo {
+        opacity: 1;
+        display: block;
+        padding: 0;
+        margin: 0;
+
+        img {
+          width: auto;
+          height: 42px;
+          position: relative;
+          top: 2px;
+        }
       }
     }
+
 
     .links {
       background-color: var(--main-color);
@@ -80,6 +85,7 @@ nav {
     display: none;
     margin-left: auto;
     padding: 0;
+    z-index: 3;
 
     button:hover {
       background-color: initial;
@@ -87,7 +93,20 @@ nav {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 790px) {
+
+  .navigation::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    z-index: 2;
+  }
+
   nav .hamburger {
     display: block;
     margin-left: auto;
@@ -104,6 +123,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 
     &.isOpen {
       top: 100%;
@@ -112,7 +132,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 650px) {
   .links {
     flex-direction: column;
     align-items: flex-start;
