@@ -13,7 +13,7 @@ const Navigation = () => {
 
   return (
     <nav>
-      <Container className='navigation'>
+      <Container className='navigation' size='lg'>
         <title>
           <a class='logo' href='https://pocetznakov.sk/'>
             <img alt='logo' src={IMG_LOGO}/>

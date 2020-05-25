@@ -1,0 +1,26 @@
+.collapsible-tile {
+  border-top: 1px solid var(--main-bg-color);
+  padding-top: var(--unit-size-x2);
+
+  & + .collapsible-tile {
+    margin-top: var(--unit-size-x2);
+  }
+
+  summary {
+    cursor: pointer;
+    outline: none;
+    padding: var(--unit-size-x2);
+    transition: background-color 0.2s ease-in-out;
+    border-radius: var(--unit-size-x4);
+    font-weight: 600;
+
+    &:hover {
+      background-color: #e1e1e1;
+    }
+  }
+
+
+  .collapsible-tile-content {
+    margin: var(--unit-size-x2) 0;
+  }
+}

@@ -1,0 +1,86 @@
+:root {
+  --white-color: white;
+  --main-color: #2364AA;
+  --main-light-color: #3DA5D9;
+  --main-bg-color: #DBE4EE;
+  --main-font-color: #444;
+  --light-font-color: white;
+
+  --unit-size: 4px;
+  --unit-size-x2: calc(var(--unit-size) * 2);
+  --unit-size-x4: calc(var(--unit-size) * 4);
+  --unit-size-x6: calc(var(--unit-size) * 6);
+  --unit-size-x8: calc(var(--unit-size) * 8);
+  --unit-size-x10: calc(var(--unit-size) * 10);
+  --unit-size-x12: calc(var(--unit-size) * 12);
+  --unit-size-x16: calc(var(--unit-size) * 16);
+  --unit-size-x20: calc(var(--unit-size) * 20);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: var(--main-bg-color);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--main-font-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  line-height: 2.3rem;
+}
+
+li + li {
+  margin-top: var(--unit-size-x2);
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  background: var(--main-color);
+  border-radius: var(--unit-size);
+  color: var(--light-font-color);
+  font-weight: 500;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--main-light-color);
+}
+
+ul {
+  padding-left: var(--unit-size-x6);
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h3,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+#app {
+  height: 100%;
+  padding: var(--unit-size-x16) var(--unit-size-x8);
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  #app {
+    padding: var(--unit-size-x12) var(--unit-size-x2);
+  }
+}
