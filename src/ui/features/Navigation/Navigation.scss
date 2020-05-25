@@ -1,10 +1,12 @@
+@import "../../../style/mixins";
+
 nav {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   background: var(--main-color);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  @include box-shadow;
 
   .navigation {
     position: relative;
@@ -12,21 +14,17 @@ nav {
     display: flex;
     align-items: center;
 
-    title {
-      z-index: 3;
+    .logo {
+      opacity: 1;
+      display: block;
+      padding: 0;
+      margin: 0;
 
-      .logo {
-        opacity: 1;
-        display: block;
-        padding: 0;
-        margin: 0;
-
-        img {
-          width: auto;
-          height: 42px;
-          position: relative;
-          top: 2px;
-        }
+      img {
+        width: auto;
+        height: 42px;
+        position: relative;
+        top: 2px;
       }
     }
 
@@ -85,7 +83,6 @@ nav {
     display: none;
     margin-left: auto;
     padding: 0;
-    z-index: 3;
 
     button:hover {
       background-color: initial;
@@ -94,6 +91,10 @@ nav {
 }
 
 @media only screen and (max-width: 790px) {
+
+  title {
+    z-index: 2;
+  }
 
   .navigation::after {
     content: ' ';
@@ -104,12 +105,13 @@ nav {
     right: 0;
     bottom: 0;
     background-color: var(--main-color);
-    z-index: 2;
+    z-index: 1;
   }
 
   nav .hamburger {
     display: block;
     margin-left: auto;
+    z-index: 2;
   }
 
   .links {
@@ -120,10 +122,11 @@ nav {
     transition: top 0.2s ease-in-out, visibility 0.2s;
     visibility: hidden;
     position: absolute;
-    top: 0;
+    top: -200%;
     left: 0;
     width: 100%;
     z-index: 1;
+    @include box-shadow;
 
     &.isOpen {
       top: 100%;
