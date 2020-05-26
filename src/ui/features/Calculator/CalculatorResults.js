@@ -1,37 +1,38 @@
-import { useTranslations } from '../TranslationsProvider';
+import {useTranslations} from '../TranslationsProvider';
+import './CalculatorResults.scss'
 
-const CalculatorResults = ({ standardPagesCount, charCount, charCountWithoutSpace }) => {
-	const { translations } = useTranslations();
+const CalculatorResults = ({standardPagesCount, charCount, charCountWithoutSpace}) => {
+  const {translations} = useTranslations();
 
-	if (!standardPagesCount) {
-		return null;
-	}
+  if (!standardPagesCount) {
+    return null;
+  }
 
-	return (
-		<section class="card">
-			<h3>{translations.resultHeader}</h3>
-			<ul class="results">
-				<li>
-					<strong>
-						{standardPagesCount.toLocaleString()}
-					</strong>{' '}
-					{translations.standardPages}
-				</li>
-				<li>
-					<strong>
-						{charCount.toLocaleString()}
-					</strong>{' '}
-					{translations.charsWithSpaces}
-				</li>
-				<li>
-					<strong>
-						{charCountWithoutSpace.toLocaleString()}
-					</strong>{' '}
-					{translations.charsWithoutSpaces}
-				</li>
-			</ul>
-		</section>
-	);
+  return (
+    <section className='results'>
+      <h3>{translations.resultHeader}</h3>
+      <ul>
+        <li>
+          <strong>
+            {standardPagesCount.toLocaleString()}
+          </strong>{' '}
+          {translations.standardPages}
+        </li>
+        <li>
+          <strong>
+            {charCount.toLocaleString()}
+          </strong>{' '}
+          {translations.charsWithSpaces}
+        </li>
+        <li>
+          <strong>
+            {charCountWithoutSpace.toLocaleString()}
+          </strong>{' '}
+          {translations.charsWithoutSpaces}
+        </li>
+      </ul>
+    </section>
+  );
 };
 
 

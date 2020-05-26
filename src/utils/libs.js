@@ -1,21 +1,20 @@
 import {useState} from 'preact/hooks';
 
 export const useSetState = (initialState) => {
-    const [state, setRawState] = useState(initialState);
+  const [state, setRawState] = useState(initialState);
 
-    const setState = (newState) => {
+  const setState = (newState) => {
+    setRawState({
+      ...state,
+      ...newState
+    });
+  };
 
-        setRawState({
-            ...state,
-            ...newState
-        });
-    };
-
-    return [state, setState];
+  return [state, setState];
 };
 
 export const trackEvent = (eventAction) => {
-    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-        window.gtag('event', eventAction);
-    }
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', eventAction);
+  }
 };
