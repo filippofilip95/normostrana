@@ -6,7 +6,7 @@
   margin: var(--unit-size-x10) auto;
   padding: var(--unit-size-x10);
   @include box-shadow;
-  
+
   .title {
     font-size: 2rem;
     margin-bottom: var(--unit-size-x8);
@@ -20,5 +20,12 @@
 
   > * {
     margin: 0;
+  }
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  .content-card {
+    padding: var(--unit-size-x6);
   }
 }
