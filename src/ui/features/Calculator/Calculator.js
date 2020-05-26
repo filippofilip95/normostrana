@@ -31,17 +31,19 @@ const Calculator = () => {
   };
 
   return (
-    <ContentCard
-      title={translations.mainHeader}
-      subTitle={translations.secondaryHeader}
-    >
-      <textarea
-        id="textarea-input"
-        ref={textareaRef}
-        placeholder={translations.inputPlaceholder}
-        onPaste={() => trackEvent('paste_into_textarea')}
-      />
-      <button onClick={onHandleClick} type='button'>
+    <ContentCard title={translations.mainHeader}>
+      <label>
+        <h2>
+          {translations.secondaryHeader}
+        </h2>
+        <textarea
+          id="textarea-input"
+          ref={textareaRef}
+          placeholder={translations.inputPlaceholder}
+          onPaste={() => trackEvent('paste_into_textarea')}
+        />
+      </label>
+      <button onClick={onHandleClick} type='button' aria-label='Calculate'>
         {translations.calculateButton}
       </button>
       <CalculatorResults

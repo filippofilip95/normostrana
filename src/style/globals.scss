@@ -68,6 +68,10 @@ button {
   &:active {
     transform: scale(0.95);
   }
+
+  &:focus, &:active {
+    outline: none;
+  }
 }
 
 ul {

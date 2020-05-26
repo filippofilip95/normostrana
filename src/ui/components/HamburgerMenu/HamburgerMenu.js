@@ -8,6 +8,7 @@ function HamburgerMenu(props) {
         className={classNames('hamburger hamburger--squeeze', props.isOpen && 'is-active')}
         type="button"
         onClick={props.onChange}
+        aria-label='menu'
       >
         <span className="hamburger-box">
           <span className="hamburger-inner"/>
