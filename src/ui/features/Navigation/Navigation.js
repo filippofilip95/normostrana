@@ -5,6 +5,7 @@ import './Navigation.scss'
 import Container from "../../components/Container";
 import HamburgerMenu from "../../components/HamburgerMenu";
 import {useState} from "preact/hooks";
+import LOGO from '../../../assets/logo.svg'
 
 const Navigation = () => {
   const {translations} = useTranslations();
@@ -15,7 +16,7 @@ const Navigation = () => {
       <Container className='navigation' size='lg'>
         <title>
           <a class='logo' href='https://pocetznakov.sk/'>
-            <img alt='logo' src='/assets/logo.svg'/>
+            <img alt='logo' src={LOGO}/>
           </a>
         </title>
         <div className='hamburger'>
