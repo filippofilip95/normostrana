@@ -41,7 +41,7 @@ const Calculator = () => {
         placeholder={translations.inputPlaceholder}
         onPaste={() => trackEvent('paste_into_textarea')}
       />
-      <button onClick={onHandleClick}>
+      <button onClick={onHandleClick} type='button'>
         {translations.calculateButton}
       </button>
       <CalculatorResults

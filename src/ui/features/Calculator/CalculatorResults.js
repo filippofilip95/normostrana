@@ -10,7 +10,7 @@ const CalculatorResults = ({standardPagesCount, charCount, charCountWithoutSpace
 
   return (
     <section className='results'>
-      <h3>{translations.resultHeader}</h3>
+      <h3 className='results-header'>{translations.resultHeader}</h3>
       <ul>
         <li>
           <strong>
