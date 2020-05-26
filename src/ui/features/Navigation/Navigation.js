@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import {useTranslations} from '../TranslationsProvider';
 import Link from "../../components/Link";
-import IMG_LOGO from './logo.svg';
 import './Navigation.scss'
 import Container from "../../components/Container";
 import HamburgerMenu from "../../components/HamburgerMenu";
@@ -16,7 +15,7 @@ const Navigation = () => {
       <Container className='navigation' size='lg'>
         <title>
           <a class='logo' href='https://pocetznakov.sk/'>
-            <img alt='logo' src={IMG_LOGO}/>
+            <img alt='logo' src='/assets/logo.svg'/>
           </a>
         </title>
         <div className='hamburger'>
