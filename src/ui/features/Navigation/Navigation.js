@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import {useTranslations} from '../TranslationsProvider';
 import Link from "../../components/Link";
-import IMG_LOGO from '../../../assets/pocetznakov-logo.svg';
+import IMG_LOGO from './logo.svg';
 import './Navigation.scss'
 import Container from "../../components/Container";
 import HamburgerMenu from "../../components/HamburgerMenu";
