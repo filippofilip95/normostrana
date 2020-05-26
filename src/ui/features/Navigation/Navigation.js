@@ -15,7 +15,7 @@ const Navigation = () => {
       <Container className='navigation' size='lg'>
         <title>
           <a class='logo' href='https://pocetznakov.sk/'>
-            <img alt='logo' src={require('../../../assets/logo.svg')}/>
+            <img alt='logo' src={require('../../../assets/logo.png')}/>
           </a>
         </title>
         <div className='hamburger'>
