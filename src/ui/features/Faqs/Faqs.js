@@ -6,7 +6,7 @@ const Faqs = () => {
   const {translations} = useTranslations();
 
   return (
-    <ContentCard title={translations.faqTitle}>
+    <ContentCard title={translations.faqTitle} hasNotH1>
       <CollapsibleTile title={translations.faqQuestion5}>
         <ul>
           <li>{translations.btRange}</li>

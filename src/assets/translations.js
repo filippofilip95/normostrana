@@ -12,7 +12,7 @@ const translations = {
         standardPages: 'normostrán',
         charsWithSpaces: 'znakov vrátane medzier',
         charsWithoutSpaces: 'znakov okrem medzier',
-        faqTitle: 'Časté otázky a odpoveďe',
+        faqTitle: 'Časté otázky a odpovede',
         standardPageCount: '1800',
         stnNorm: 'STN EN ISO 690',
         faqQuestion1: 'Čo je to Normostrana?',
