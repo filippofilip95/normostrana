@@ -3,6 +3,7 @@ import {trackEvent, useSetState} from '../../../utils/libs';
 import {useTranslations} from '../TranslationsProvider';
 import CalculatorResults from './CalculatorResults';
 import ContentCard from "../../components/ContentCard";
+import DocumentUploader from "./DocumentUploader";
 import './Calculator.scss'
 
 const Calculator = () => {
@@ -36,12 +37,15 @@ const Calculator = () => {
         <h2>
           {translations.secondaryHeader}
         </h2>
-        <textarea
-          id="textarea-input"
-          ref={textareaRef}
-          placeholder={translations.inputPlaceholder}
-          onPaste={() => trackEvent('paste_into_textarea')}
-        />
+        <div className='calculation-inputs'>
+          <textarea
+            id="textarea-input"
+            ref={textareaRef}
+            placeholder={translations.inputPlaceholder}
+            onPaste={() => trackEvent('paste_into_textarea')}
+          />
+          <DocumentUploader/>
+        </div>
       </label>
       <button onClick={onHandleClick} type='button' aria-label='Calculate'>
         {translations.calculateButton}

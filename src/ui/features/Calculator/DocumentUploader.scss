@@ -1,0 +1,43 @@
+.document-uploader {
+  flex: 1;
+  border: 2px solid var(--main-color);
+  margin: 0 0 0 var(--unit-size-x2);
+  border-radius: var(--unit-size-x2);
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  input {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  img {
+    height: auto;
+    width: 40%;
+  }
+
+  button {
+    margin-top: var(--unit-size-x4);
+  }
+
+  .dragover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+#dragleave-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+}

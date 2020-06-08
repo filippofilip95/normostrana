@@ -1,10 +1,17 @@
 #textarea-input {
   width: 100%;
-  min-width: 100%;
   max-width: 100%;
   min-height: 15rem;
   max-height: 70vh;
   padding: var(--unit-size-x2);
-  margin: var(--unit-size-x4) 0;
-  border: 1px var(--main-color) solid;
+  margin: 0 var(--unit-size-x2) 0 0;
+  border: 2px var(--main-color) solid;
+  border-radius: var(--unit-size-x2);
+  outline: none;
+  flex: 1;
+}
+
+.calculation-inputs {
+  display: flex;
+  margin: var(--unit-size-x8) 0;
 }
