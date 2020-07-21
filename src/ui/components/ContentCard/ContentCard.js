@@ -1,20 +1,16 @@
 import './ContentCard.scss'
 
-function ContentCard(props) {
+function ContentCard({as: Tag = 'section', title, subTitle, children}) {
   return (
-    <section className="content-card">
-      {!props.hasNotH1 ? (
-        <h1 className='title'>{props.title}</h1>
-      ) : (
-        <h2 className='title'>{props.title}</h2>
+    <Tag className="content-card">
+      {!!title && (
+        <h1 className='title'>{title}</h1>
       )}
-      {!props.hasNotH1 ? (
-        <h2>{props.subTitle}</h2>
-      ) : (
-        <h3>{props.subTitle}</h3>
+      {!!subTitle && (
+        <h2>{subTitle}</h2>
       )}
-      {props.children}
-    </section>
+      {children}
+    </Tag>
   );
 }
 

@@ -1,8 +1,13 @@
+import Container from "../components/Container";
+import AboutStandardPage from "../features/AboutStandardPage/AboutStandardPage";
+import Faqs from "../features/Faqs";
+
 const Normostrana = () => {
   return (
-    <article>
-      ABOUT NORMOSTRANA
-    </article>
+    <Container size='md'>
+      <AboutStandardPage/>
+      <Faqs/>
+    </Container>
   );
 };
 

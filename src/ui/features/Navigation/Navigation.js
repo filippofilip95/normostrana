@@ -23,7 +23,7 @@ const Navigation = () => {
         </div>
         <div className={classNames('links', isOpen && 'isOpen')}>
           <Link href="/">Výpočet Normostrán</Link>
-          {/*<Link href="/normostrana">Viac o Normostrane</Link>*/}
+          <Link href="/normostrana">Viac o Normostrane</Link>
           {/*<Link href="/normostrana">O Projekte</Link>*/}
         </div>
       </Container>
