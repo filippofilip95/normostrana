@@ -1,50 +1,51 @@
-import {createContext} from 'preact';
-import {useContext, useEffect} from 'preact/hooks';
+import {createContext} from 'preact'
+import {useContext, useEffect} from 'preact/hooks'
 
-import translations from '../../assets/translations';
-import {useSetState} from '../../utils/libs';
+import translations from '../../assets/translations'
+import {useSetState} from '../../utils/libs'
 
-export const Translations = createContext({});
+export const Translations = createContext({})
 
-export const useTranslations = () => useContext(Translations);
+export const useTranslations = () => useContext(Translations)
 
 const TranslationsProvider = ({children}) => {
-  const [state, setState] = useSetState({translation: 'sk'});
-  const {translation} = state;
+    const [state, setState] = useSetState({translation: 'sk'})
+    const {translation} = state
 
-  useEffect(() => {
-    setBrowserTranslation();
-  }, []);
+    useEffect(() => {
+        setBrowserTranslation()
+    }, [])
 
-  const setTranslation = event => {
-    setState({
-      translation: event.target.value
-    });
-  };
-
-  const setBrowserTranslation = () => {
-    const browserLang = (
-      navigator.language || navigator.userLanguage
-    ).substring(0, 2);
-
-    if (Object.keys(translations).includes(browserLang)) {
-      setState({translation: browserLang});
+    const setTranslation = (event) => {
+        setState({
+            translation: event.target.value,
+        })
     }
-  };
 
-  if (typeof window !== 'undefined') {
-    document.documentElement.lang = translation;
-  }
+    const setBrowserTranslation = () => {
+        const browserLang = (
+            navigator.language || navigator.userLanguage
+        ).substring(0, 2)
 
-  return (
-    <Translations.Provider value={{
-      translations: translations[translation],
-      setTranslation
-    }}
-    >
-      {children}
-    </Translations.Provider>
-  );
-};
+        if (Object.keys(translations).includes(browserLang)) {
+            setState({translation: browserLang})
+        }
+    }
 
-export default TranslationsProvider;
+    if (typeof window !== 'undefined') {
+        document.documentElement.lang = translation
+    }
+
+    return (
+        <Translations.Provider
+            value={{
+                translations: translations[translation],
+                setTranslation,
+            }}
+        >
+            {children}
+        </Translations.Provider>
+    )
+}
+
+export default TranslationsProvider

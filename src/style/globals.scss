@@ -1,90 +1,91 @@
-@import "~modern-normalize/modern-normalize.css";
-@import "./mixins";
+@import '~modern-normalize/modern-normalize.css';
+@import './mixins';
 
 :root {
-  --white-color: white;
-  --main-color: #2364AA;
-  --main-light-color: #3DA5D9;
-  --main-bg-color: #DBE4EE;
-  --main-font-color: #444;
-  --light-font-color: white;
+    --white-color: white;
+    --main-color: #2364aa;
+    --main-light-color: #3da5d9;
+    --main-bg-color: #dbe4ee;
+    --main-font-color: #444;
+    --light-font-color: white;
 
-  --unit-size: 4px;
-  --unit-size-x2: calc(var(--unit-size) * 2);
-  --unit-size-x4: calc(var(--unit-size) * 4);
-  --unit-size-x6: calc(var(--unit-size) * 6);
-  --unit-size-x8: calc(var(--unit-size) * 8);
-  --unit-size-x10: calc(var(--unit-size) * 10);
-  --unit-size-x12: calc(var(--unit-size) * 12);
-  --unit-size-x16: calc(var(--unit-size) * 16);
-  --unit-size-x20: calc(var(--unit-size) * 20);
+    --unit-size: 4px;
+    --unit-size-x2: calc(var(--unit-size) * 2);
+    --unit-size-x4: calc(var(--unit-size) * 4);
+    --unit-size-x6: calc(var(--unit-size) * 6);
+    --unit-size-x8: calc(var(--unit-size) * 8);
+    --unit-size-x10: calc(var(--unit-size) * 10);
+    --unit-size-x12: calc(var(--unit-size) * 12);
+    --unit-size-x16: calc(var(--unit-size) * 16);
+    --unit-size-x20: calc(var(--unit-size) * 20);
 }
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background: var(--main-bg-color);
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5rem;
-  font-weight: 400;
-  color: var(--main-font-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--main-bg-color);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--main-font-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  line-height: 2.3rem;
+    line-height: 2.3rem;
 }
 
 li + li {
-  margin-top: var(--unit-size-x2);
+    margin-top: var(--unit-size-x2);
 }
 
 button {
-  display: inline-block;
-  border: none;
-  padding: var(--unit-size-x2) var(--unit-size-x8);
-  border-radius: var(--unit-size);
-  margin: 0;
-  font-weight: 500;
-  text-decoration: none;
-  background: var(--main-color);
-  color: var(--light-font-color);
-  font-size: 1.1rem;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color .15s ease-in-out, transform .15s ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  @include box-shadow;
+    display: inline-block;
+    border: none;
+    padding: var(--unit-size-x2) var(--unit-size-x8);
+    border-radius: var(--unit-size);
+    margin: 0;
+    font-weight: 500;
+    text-decoration: none;
+    background: var(--main-color);
+    color: var(--light-font-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.15s ease-in-out, transform 0.15s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    @include box-shadow;
 
-  &:hover {
-    background: var(--main-light-color);
-  }
+    &:hover {
+        background: var(--main-light-color);
+    }
 
-  &:active {
-    transform: scale(0.95);
-  }
+    &:active {
+        transform: scale(0.95);
+    }
 
-  &:focus, &:active {
-    outline: none;
-  }
+    &:focus,
+    &:active {
+        outline: none;
+    }
 }
 
 ul {
-  padding-left: var(--unit-size-x6);
-  margin: 0;
+    padding-left: var(--unit-size-x6);
+    margin: 0;
 }
 
 p {
-  margin-top: 0;
+    margin-top: 0;
 
-  &:first-letter {
-    margin-left: var(--unit-size-x6);
-  }
+    &:first-letter {
+        margin-left: var(--unit-size-x6);
+    }
 }
 
 h1,
@@ -93,26 +94,26 @@ h3,
 h3,
 h5,
 h6 {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 #app {
-  height: 100%;
-  padding: var(--unit-size-x16) var(--unit-size-x8);
+    height: 100%;
+    padding: var(--unit-size-x16) var(--unit-size-x8);
 }
 
 .article-image-right {
-  max-width: 300px;
-  width: 50%;
-  height: auto;
-  float: right;
-  border-radius: var(--unit-size-x2);
-  margin-left: var(--unit-size-x4);
+    max-width: 300px;
+    width: 50%;
+    height: auto;
+    float: right;
+    border-radius: var(--unit-size-x2);
+    margin-left: var(--unit-size-x4);
 }
 
 /* media queries */
 @media only screen and (max-width: 600px) {
-  #app {
-    padding: var(--unit-size-x12) var(--unit-size-x4);
-  }
+    #app {
+        padding: var(--unit-size-x12) var(--unit-size-x4);
+    }
 }

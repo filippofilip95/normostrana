@@ -1,31 +1,32 @@
-@import "../../../style/mixins";
+@import '../../../style/mixins';
 
 .content-card {
-  background: var(--white-color);
-  border-radius: var(--unit-size);
-  margin: var(--unit-size-x10) auto;
-  padding: var(--unit-size-x10);
-  @include box-shadow;
+    background: var(--white-color);
+    border-radius: var(--unit-size);
+    margin: var(--unit-size-x10) auto;
+    padding: var(--unit-size-x10);
+    @include box-shadow;
 
-  .title {
-    font-size: 2rem;
-    margin-bottom: var(--unit-size-x8);
-  }
+    .title {
+        font-size: 2rem;
+        margin-bottom: var(--unit-size-x8);
+    }
 
-  h2, h3 {
-    font-size: 1.2rem;
-    margin-bottom: var(--unit-size-x2);
-    font-weight: 600;
-  }
+    h2,
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: var(--unit-size-x2);
+        font-weight: 600;
+    }
 
-  > * {
-    margin: 0;
-  }
+    > * {
+        margin: 0;
+    }
 }
 
 /* media queries */
 @media only screen and (max-width: 600px) {
-  .content-card {
-    padding: var(--unit-size-x6);
-  }
+    .content-card {
+        padding: var(--unit-size-x6);
+    }
 }
