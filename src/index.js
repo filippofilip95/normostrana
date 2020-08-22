@@ -11,7 +11,7 @@ const App = () => (
       <Navigation/>
       <main class="content">
         <Router>
-          <Calculator path='/'/>
+          <Calculator path='/' default/>
           <Normostrana path='/normostrana'/>
         </Router>
       </main>

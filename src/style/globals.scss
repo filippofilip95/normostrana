@@ -81,6 +81,10 @@ ul {
 
 p {
   margin-top: 0;
+
+  &:first-letter {
+    margin-left: var(--unit-size-x6);
+  }
 }
 
 h1,
@@ -95,6 +99,15 @@ h6 {
 #app {
   height: 100%;
   padding: var(--unit-size-x16) var(--unit-size-x8);
+}
+
+.article-image-right {
+  max-width: 300px;
+  width: 50%;
+  height: auto;
+  float: right;
+  border-radius: var(--unit-size-x2);
+  margin-left: var(--unit-size-x4);
 }
 
 /* media queries */
