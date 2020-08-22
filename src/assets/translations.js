@@ -38,6 +38,8 @@ const translations = {
             'Uvedené rozsahy sú podľa smernice Univerzity UKF v Nitre. Na iných univerzitách sa môžu líšiť.  Vačšinov sú však veľmi podobné alebo identické.',
         license: '',
         language: 'Jazyk:',
+        menuItemCalculation: 'Výpočet Normostrán',
+        menuItemNormostrana: 'Viac o Normostrane',
     },
     cs: {
         lang: 'cs',
@@ -79,6 +81,8 @@ const translations = {
             'Uvedené rozsahy jsou podle směrnice Univerzity UKF v Nitře. Na jiných univerzitách se mohou lišit. Většinou jsou však velmi podobné nebo identické',
         license: '',
         language: 'Jazyk:',
+        menuItemCalculation: 'Výpočet Normostran',
+        menuItemNormostrana: 'Více o Normostrane',
     },
 }
 
