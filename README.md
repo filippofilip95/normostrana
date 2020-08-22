@@ -1,23 +1,27 @@
-
-
 # Standard Page / Character Counter / Pocet Znakov
+
 Web app for counting standard pages.
 Standard pages are usually used to count the size of academic theses in Slovakia and the Czech Republic.
 
 ## Standard Page Definition
+
 Or, NS. It is a standardized side of the text, which is recognized as an international unit of length texts. Its length is 1800 characters including spaces. This range corresponds to 30 lines by 60 characters [(Source)](http://www.czech-universities.com/akademicky-slovnik/heslo/monormostrana).
 
 ## Why
+
 This app was built just as a simple side project to demonstrate the Progresive Web Main.
 
 ## Accessible at
+
 [https://pocetznakov.sk/](https://pocetznakov.sk/)
 
 ## Built with
- - [Preact](https://preactjs.com) (3KB Alterniative to [React](https://reactjs.org/))
+
+-   [Preact](https://preactjs.com) (3KB Alterniative to [React](https://reactjs.org/))
 
 ## CLI Commands
-``` bash
+
+```bash
 # install dependencies
 npm install
 
@@ -30,9 +34,10 @@ npm run build
 # test the production build locally
 npm run serve
 
-# run tests with jest and preact-render-spy 
+# run tests with jest and preact-render-spy
 npm run test
 ```
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

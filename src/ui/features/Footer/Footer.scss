@@ -1,0 +1,10 @@
+footer {
+    padding: var(--unit-size-x6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        margin-right: var(--unit-size-x2);
+    }
+}

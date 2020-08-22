@@ -12,7 +12,7 @@ const translations = {
         standardPages: 'normostrán',
         charsWithSpaces: 'znakov vrátane medzier',
         charsWithoutSpaces: 'znakov okrem medzier',
-        faqTitle: 'Časté otázky a odpoveďe',
+        faqTitle: 'Časté otázky a odpovede',
         standardPageCount: '1800',
         stnNorm: 'STN EN ISO 690',
         faqQuestion1: 'Čo je to Normostrana?',
@@ -21,19 +21,25 @@ const translations = {
         faqQuestion2: 'Načo sa Normostrana používá?',
         faqAnswer2: 'Používa sa na meranie rozsahu textu podlľa počtu znakov.',
         faqQuestion3: 'Kto určil počet znakov Normostrany?',
-        faqAnswer3: 'Koeficient 1800 znakov pre jednu Normostranu je definovaný v norme STN EN ISO 690',
+        faqAnswer3:
+            'Koeficient 1800 znakov pre jednu Normostranu je definovaný v norme STN EN ISO 690',
         faqQuestion4: 'Kde sa Normostrana používá?',
-        faqAnswer4: 'Používa sa v publicistike, prekladatelstve, a copywritingu. Taktiež sa s nou môžeme stretnúť pri školských prácach, univezitných závarečných prácach a referátoch',
-        faqQuestion5: 'Koľko Normostrán / Počet Znakov potrebujem k Zaverečnej práci?',
+        faqAnswer4:
+            'Používa sa v publicistike, prekladatelstve, a copywritingu. Taktiež sa s nou môžeme stretnúť pri školských prácach, univezitných závarečných prácach a referátoch',
+        faqQuestion5:
+            'Koľko Normostrán / Počet Znakov potrebujem k Zaverečnej práci?',
         btRange:
             'Bakalárska práca: 30 - 40 NS (54 000 až 72 000 znakov vrátane medzier)',
-        dtRange: 'Diplomová práca:  50 - 70 NS (90 000 až 126 000 znakov vrátane medzier)',
+        dtRange:
+            'Diplomová práca:  50 - 70 NS (90 000 až 126 000 znakov vrátane medzier)',
         ditRange:
             'Dizertačná práca: 80 - 120 strán (144 000 až 216 000 znakov vrátane medzier)',
         thesisRangeCaption:
             'Uvedené rozsahy sú podľa smernice Univerzity UKF v Nitre. Na iných univerzitách sa môžu líšiť.  Vačšinov sú však veľmi podobné alebo identické.',
         license: '',
-        language: 'Jazyk:'
+        language: 'Jazyk:',
+        menuItemCalculation: 'Výpočet Normostrán',
+        menuItemNormostrana: 'Viac o Normostrane',
     },
     cs: {
         lang: 'cs',
@@ -57,23 +63,29 @@ const translations = {
         faqQuestion2: 'K čemu se Normostrana používá?',
         faqAnswer2: 'Používá se k měření rozsahu textu podle počtu znaků',
         faqQuestion3: 'Kdo určil počet znaků Normostrany?',
-        faqAnswer3: 'Koeficient 1800 znaků pro jednu normostranu je definován v normě ČSN EN ISO 690.',
+        faqAnswer3:
+            'Koeficient 1800 znaků pro jednu normostranu je definován v normě ČSN EN ISO 690.',
         faqQuestion4: 'Kde se Normostrana používá?',
-        faqAnswer4: 'Používá se v publicistice, překladatelství, a copywritingu. Také se s ní můžeme setkat při školních pracích, univezitných závarečných pracích a referátech.',
-        faqQuestion5: 'Kolik Normostran / Počet Znaků potřebuji k závěrečné práci?',
+        faqAnswer4:
+            'Používá se v publicistice, překladatelství, a copywritingu. Také se s ní můžeme setkat při školních pracích, univezitných závarečných pracích a referátech.',
+        faqQuestion5:
+            'Kolik Normostran / Počet Znaků potřebuji k závěrečné práci?',
         infoRangeHeader: 'Doporučené rozsahy:',
         btRange:
             'Bakalářská práce: 30 - 40 NS (54 000 až 72 000 znaků včetně mezer)',
-        dtRange: 'Diplomová práce: 50 - 70 NS (90 000 až 126 000 znaků včetně mezer)',
+        dtRange:
+            'Diplomová práce: 50 - 70 NS (90 000 až 126 000 znaků včetně mezer)',
         ditRange:
             'Disertační práce: 80 - 120 stran (144 000 až 216 000 znaků včetně mezer)',
         thesisRangeCaption:
             'Uvedené rozsahy jsou podle směrnice Univerzity UKF v Nitře. Na jiných univerzitách se mohou lišit. Většinou jsou však velmi podobné nebo identické',
         license: '',
-        language: 'Jazyk:'
-    }
-};
+        language: 'Jazyk:',
+        menuItemCalculation: 'Výpočet Normostran',
+        menuItemNormostrana: 'Více o Normostrane',
+    },
+}
 
-export const getLangs = () => Object.keys(translations);
+export const getLangs = () => Object.keys(translations)
 
-export default translations;
+export default translations

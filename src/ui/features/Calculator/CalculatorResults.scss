@@ -1,0 +1,17 @@
+.results {
+    margin-top: var(--unit-size-x6);
+    transition: transform 0.2s ease-in-out;
+
+    &.animating-result {
+        transform: scale(1.1) translateX(4%);
+    }
+
+    .results-header {
+        font-size: 1.6rem;
+        margin-bottom: var(--unit-size-x6);
+    }
+
+    ul li {
+        font-size: 1.2rem;
+    }
+}
